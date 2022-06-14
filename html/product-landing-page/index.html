@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Landing Page</title>
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/294aee5008.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="page-wrapper">
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="./logo.png" alt="Wooden Craft">
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#how-it-works">How it works</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="customer">
+      <h2> You don't always need a plan!</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <input id="submit" type="submit" value="Get Started" class="btn" />
+      </form>
+    </section>
+    <div class="container">
+      <section id="features">
+        <div class="grid">
+          <div class="icon">
+            <i class="fa-solid fa-tree-city fa-5x"></i>
+          </div>
+          <div class="desc">
+            <h2>100% natural materials.</h2>
+            <p>All of our products are 100% made exclusively from natural, environmentally friendly materials.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon">
+            <i class="fa-solid fa-screwdriver fa-5x"></i>
+          </div>
+          <div class="desc">
+            <h2>Handcrafted.</h2>
+            <p>All our products are made by highly skilled craftsmen.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon">
+            <i class="fa-solid fa-truck-fast fa-5x"></i>
+          </div>
+          <div class="desc">
+            <h2>Same-day shipping.</h2>
+            <p>We cooperate with all delivery operators.</p>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works">
+        <iframe id="video" height="300" src="https://www.youtube-nocookie.com/embed/--jQm7vOTkw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </section>
+      <section id="pricing">
+        <div class="product" id="tenor">
+          <div class="level">Chunky Scaffold Boards</div>
+          <h2>$26</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="bass">
+          <div class="level">Wood Framed Wire Tree</div>
+          <h2>$50</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="valve">
+          <div class="level">Woodland Acorn Button Box</div>
+          <h2>$100</h2>
+          <ol>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Jazz Bands</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2022, Wooden Craft</span>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

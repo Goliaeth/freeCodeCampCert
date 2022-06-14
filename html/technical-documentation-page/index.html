@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <title>Technical Documentation Page</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>HTML crib</header>
+    <ul>
+      <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+      <li><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
+      <li><a class="nav-link" href="#Nesting_elements">Nesting elements</a></li>
+      <li><a class="nav-link" href="#Empty_elements">Empty elements</a></li>
+      <li><a class="nav-link" href="#Images">Images</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="What_is_HTML?">
+      <header>What is HTML?</header>
+      <article>
+        <p>
+          HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions.
+        </p>
+        <p>
+          HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:
+        </p>
+        <code>My cat is very grumpy</code>
+        <p>
+          If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in paragraph tags:
+        </p>
+        <code><span class="color-text">&lt;p&gt;</span>My cat is very grumpy<span class="color-text">&lt;/p&gt;</span></code>
+      </article>
+    </section>
+    <section class="main-section" id="Anatomy_of_an_HTML_element">
+      <header>Anatomy of an HTML element</header>
+      <article>
+        <p>
+          The main parts of our element are as follows:
+        </p>
+        <ol>
+          <li><strong>The opening tag:</strong> This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.</li>
+          <li><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.</li>
+          <li><strong>The content:</strong> This is the content of the element, which in this case, is just text.</li>
+          <li><strong>The element:</strong> The opening tag, the closing tag, and the content together comprise the element.</li>
+        </ol>
+        <p>
+          Elements can also have attributes. Attributes contain extra information about the element that you don't want to appear in the actual content. Here, class is the attribute name and editor-note is the attribute value. The class attribute allows you to give the element a non-unique identifier that can be used to target it (and any other elements with the same class value) with style information and other things.
+        </p>
+        <p>
+          An attribute should always have the following:
+        </p>
+        <ol>
+          <li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes).</li>
+          <li>The attribute name followed by an equal sign.</li>
+          <li>The attribute value wrapped by opening and closing quotation marks.</li>
+        </ol>
+      </article>
+    </section>
+    <section class="main-section" id="Nesting_elements">
+      <header>Nesting elements</header>
+      <article>
+        <p>
+          You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a <span class="color-text">&lt;strong&gt;</span> element, which means that the word is to be strongly emphasized:
+        </p>
+        <code><span class="color-text">&lt;p&gt;</span>My cat is <span class="color-text">&lt;strong&gt;</span>very<span class="color-text">&lt;/strong&gt;</span> grumpy.<span class="color-text">&lt;/p&gt;</span></code>
+        <p>
+          The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap as shown above, then your web browser will try to make the best guess at what you were trying to say, which can lead to unexpected results. So don't do it!
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Empty_elements">
+      <header>Empty elements</header>
+      <article>
+        <p>
+          Some elements have no content and are called empty elements. Take the <img> element that we already have in our HTML page:
+        </p>
+        <code><span class="color-text">&lt;img</span> src="images/firefox-icon.png" alt="My test image"<span class="color-text">&gt;</span></code>
+        <p>This contains two attributes, but there is no closing </img> tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Images">
+      <header>Images</header>
+      <article>
+        <p>
+          Let's turn our attention to the <img> element again:
+        </p>
+        <code><span class="color-text">&lt;img</span> src="images/firefox-icon.png" alt="My test image"<span class="color-text">&gt;</span></code>
+        <p>
+          As we said before, it embeds an image into our page in the position it appears. It does this via the src (source) attribute, which contains the path to our image file.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
